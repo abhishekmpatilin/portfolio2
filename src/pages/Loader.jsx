@@ -1,13 +1,19 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 
-const loader = () => {
+const Loader = ({ isLoading }) => {
+  const loaderRef = useRef(null);
+
+  useEffect(() => {}, [isLoading]);
+
   return (
-    <section className="absolute ">
-      <div className="relative h-screen w-screen bg-white flex justify-center items-center">
-        <div className="counter"></div>
-      </div>
-    </section>
+    <div
+      className={`loader fixed top-0 left-0 w-full h-full bg-white flex justify-center items-center z-50 ${
+        isLoading ? "block" : "hidden"
+      }`}
+    >
+      <div className="" ref={loaderRef}></div>
+    </div>
   );
 };
 
-export default loader;
+export default Loader;

@@ -9,38 +9,32 @@ const Header = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-between px-4">
+    <div className="relative flex items-center justify-between py-4">
       <Link to={"/"} className="logo">
         <p className="m-0 text-xl font-medium p-4">Bhushan Bandal</p>
       </Link>
       <div
-        className={`absolute top-full w-dvw  ${
-          menu ? "block" : "hidden"
+        className={`absolute top-full ${
+          menu ? "block w-full" : "hidden"
         } sm:inline-block sm:relative sm:w-auto`}
       >
         <ul className={`mb-4 sm:flex sm:items-center sm:mb-0 sm:gap-4`}>
           <li className="nav-item text-center">
             <Link
               to="work"
-              className="nav-link block p-4 text-5xl font-medium sm:text-xl sm:font-normal"
+              className="group relative inline-block pb-1 nav-link p-4 text-5xl font-medium sm:text-xl sm:font-normal"
             >
               Work
+              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-black group-hover:animate-zap-line"></span>
             </Link>
           </li>
           <li className="nav-item text-center">
             <Link
               to="about"
-              className="nav-link block p-4 text-5xl font-medium sm:text-xl sm:font-normal"
+              className="group relative inline-block pb-1 nav-link p-4 text-5xl font-medium sm:text-xl sm:font-normal"
             >
               About
-            </Link>
-          </li>
-          <li className="nav-item text-center">
-            <Link
-              to="contact"
-              className="nav-link block p-4 text-5xl font-medium sm:text-xl sm:font-normal"
-            >
-              Contact
+              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-black group-hover:animate-zap-line"></span>
             </Link>
           </li>
         </ul>
