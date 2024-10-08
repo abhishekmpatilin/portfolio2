@@ -7,26 +7,15 @@ import Home from "./pages/Home";
 import Work from "./pages/Work";
 import About from "./pages/About";
 import Loader from "./pages/Loader";
-import Project from "./pages/project";
+import Project from "./pages/Project";
 import Footer from "./pages/Footer";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-  const location = useLocation();
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, [location]);
-
   return (
     <>
+      <Loader />
       <div className="relative grid grid-cols-12 bg-primary z-10">
         <div className="col-span-8 col-start-3 z-10 bg-primary">
-          <Loader isLoading={isLoading} />
           <Header />
           <section className="p-4">
             <Routes>
