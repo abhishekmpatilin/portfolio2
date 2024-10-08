@@ -15,7 +15,7 @@ const Header = () => {
       </Link>
       <div
         className={`absolute top-full ${
-          menu ? "block w-full" : "hidden"
+          menu ? "block w-full bg-white" : "hidden"
         } sm:inline-block sm:relative sm:w-auto`}
       >
         <ul className={`mb-4 sm:flex sm:items-center sm:mb-0 sm:gap-4`}>

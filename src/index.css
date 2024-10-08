@@ -6,5 +6,8 @@
 
 body {
   font-family: "Inter Tight", sans-serif;
+}
+
+.bg-primary {
   background-color: #fcfbf7;
 }

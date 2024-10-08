@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Work = () => {
+const HomeProjecLinks = () => {
   const projects = [
     {
       id: 1,
@@ -28,22 +28,24 @@ const Work = () => {
       img: "https://picsum.photos/200/300/?blur=5&random=4",
     },
   ];
-
   return (
     <>
-      <section className="pb-12">
-        <div className="">
-          <header className="text-5xl md:text-8xl lg:text-[10em] text-center mt-20 mb-12">
-            Work
-          </header>
-          <p className="text-2xl lg:w-2/4 text-center m-auto mb-12 flex items-center justify-center gap-2">
-            2021 <span className="inline-block h-1 w-8 bg-black"></span> Present
-          </p>
-        </div>
-      </section>
-      <section className="pb-20">
+      <section className="pb-20 border-b">
         <div className="mt-12">
-          <div className="pb-20  grid grid-cols-2 gap-8">
+          <div className="flex justify-between items-center mb-6">
+            <h3 className="text-2xl">Featured work</h3>
+            <button
+              className="bg-neutral-100 px-8 py-2 text-xl rounded-e-full rounded-s-full "
+              type="button"
+            >
+              <Link to="/work">
+                <span className="inline-block whitespace-nowrap">
+                  All Projects
+                </span>
+              </Link>
+            </button>
+          </div>
+          <div className="grid grid-cols-2 gap-8">
             {projects.map((project) => {
               return (
                 <div key={project.id} className="col-span-1">
@@ -66,4 +68,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default HomeProjecLinks;
