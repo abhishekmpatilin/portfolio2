@@ -17,34 +17,34 @@ const Header = () => {
 
       <div
         className={`absolute top-full left-0 w-full bg-primary transition-all duration-200 ease-in-out overflow-hidden ${
-          menu ? " h-52 sm:h-full" : "h-0"
-        } sm:inline-block sm:relative sm:w-auto sm:h-auto sm:opacity-100 sm:overflow-visible sm:max-h-none`}
+          menu ? " h-52" : "h-0"
+        } sm:relative sm:w-auto sm:h-auto sm:opacity-100 sm:overflow-visible sm:max-h-none`}
       >
         <ul className="mb-6 sm:flex sm:items-center sm:mb-0 sm:gap-4">
           <li className="nav-item text-center overflow-hidden">
             <Link
               to="work"
-              className={`group relative inline-block nav-link p-2 text-5xl font-medium sm:text-xl sm:font-normal transition-transform duration-300 ease-in-out transform  ${
+              className={`group relative inline-block nav-link p-2 text-5xl font-medium sm:text-xl sm:font-normal transition-transform duration-300 ease-in-out transform ${
                 menu
                   ? "translate-y-0 opacity-100 delay-200"
-                  : "absolute top-full left-0 translate-y-16 opacity-0"
-              }`}
+                  : "absolute top-full left-0 translate-y-16"
+              } sm:translate-y-0 sm:opacity-100`}
             >
               Work
-              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-black group-hover:w-full transition-all duration-300 ease-in-out"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-black group-hover:w-full transition-all duration-300 ease-in-out group-hover:animate-zap-line"></span>
             </Link>
           </li>
           <li className="nav-item text-center overflow-hidden">
             <Link
-              to="work"
-              className={`group relative inline-block nav-link p-2 text-5xl font-medium sm:text-xl sm:font-normal transition-transform duration-300 ease-in-out transform  ${
+              to="about" // Fixed the link here
+              className={`group relative inline-block nav-link p-2 text-5xl font-medium sm:text-xl sm:font-normal transition-transform duration-300 ease-in-out transform ${
                 menu
                   ? "translate-y-0 opacity-100 delay-200"
-                  : "absolute top-full left-0 translate-y-16 opacity-0"
-              }`}
+                  : "absolute top-full left-0 translate-y-16"
+              } sm:translate-y-0 sm:opacity-100`}
             >
               About
-              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-black group-hover:w-full transition-all duration-300 ease-in-out"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-black group-hover:w-full transition-all duration-300 ease-in-out group-hover:animate-zap-line"></span>
             </Link>
           </li>
         </ul>

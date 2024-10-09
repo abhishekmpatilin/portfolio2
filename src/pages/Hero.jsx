@@ -35,7 +35,7 @@ const Hero = () => {
           <img
             src="https://picsum.photos/200/300/?blur=5&random=5"
             alt="Profile"
-            className="w-full h-60 md:h-96 xl:h-[50em] rounded-2xl"
+            className="w-full h-60 md:h-96 xl:h-[50em] rounded-2xl object-cover"
           />
         </div>
       </section>
