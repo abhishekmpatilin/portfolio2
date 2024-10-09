@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 
@@ -7,15 +6,17 @@ import Home from "./pages/Home";
 import Work from "./pages/Work";
 import About from "./pages/About";
 import Loader from "./pages/Loader";
-import Project from "./pages/Project";
 import Footer from "./pages/Footer";
+import Project from "./pages/project";
+import ResetScroll from "./components/ResetScroll";
 
 function App() {
   return (
     <>
       <Loader />
+      <ResetScroll />
       <div className="relative grid grid-cols-12 bg-primary z-10">
-        <div className="col-span-8 col-start-3 z-10 bg-primary">
+        <div className="col-span-12 px-2 md:px-0 md:col-span-8 md:col-start-3 z-10 bg-primary">
           <Header />
           <section className="p-4">
             <Routes>
