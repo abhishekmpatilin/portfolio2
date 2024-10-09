@@ -13,16 +13,16 @@ const Hero = () => {
             high-performance applications that drive business efficiency and
             deliver exceptional user experiences.
           </p>
-          <button className=" bg-neutral-100 px-8 py-4 flex items-center justify-start gap-4 rounded-e-full rounded-s-full m-auto mb-12 text-2xl relative group ">
+          <button className=" bg-neutral-100 px-6 py-3 md:px-8 md:py-4 flex items-center justify-start gap-4 rounded-e-full rounded-s-full m-auto mb-12 text-xl md:text-2xl relative group ">
             <span className="inline-block relative">
               <span className="inline-block w-4 h-4 rounded-full bg-green-400"></span>
-              <span className="absolute inset-0 w-4 h-4 top-[.35em] bg-green-400 rounded-full opacity-0 group-hover:animate-ripple"></span>
+              <span className="absolute inset-0 w-4 h-4 top-1 md:top-[.35em] bg-green-400 rounded-full opacity-0 group-hover:animate-ripple"></span>
             </span>
             <span className="relative me-3 overflow-hidden h-8 w-48 flex items-center">
-              <span className="absolute inset-0 transition-transform duration-300 ease-in-out transform group-hover:-translate-y-8 text-2xl text-nowrap">
+              <span className="absolute inset-0 transition-transform duration-300 ease-in-out transform group-hover:-translate-y-8 text-nowrap">
                 Available for work
               </span>
-              <span className="absolute inset-0 translate-y-8 transition-transform duration-300 ease-in-out transform group-hover:translate-y-0 text-2xl text-nowrap">
+              <span className="absolute inset-0 translate-y-8 transition-transform duration-300 ease-in-out transform group-hover:translate-y-0 text-nowrap">
                 Available for work
               </span>
             </span>
