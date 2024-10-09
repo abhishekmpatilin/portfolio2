@@ -22,7 +22,7 @@ const Loader = () => {
           <div className="overflow-hidden">
             <div className="relative h-8 w-10 text-2xl text-right font-bold">
               <p
-                className="absolute right-0 top-full animate-moveUpNegative"
+                className="animate-moveUpNegative"
                 style={{ animationDelay: "750ms" }}
               >
                 0

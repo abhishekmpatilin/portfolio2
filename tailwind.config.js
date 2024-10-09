@@ -23,7 +23,7 @@ export default {
           "100%": { transform: "translateY(-32px)", opacity: 1 },
         },
         moveUpNegative: {
-          "0%": { transform: "translateY(-32px)", opacity: 1 },
+          "0%": { transform: "translateY(0)", opacity: 1 },
           "100%": { transform: "translateY(-64px)", opacity: 1 },
         },
         fadeIn: {
