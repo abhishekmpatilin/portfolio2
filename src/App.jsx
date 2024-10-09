@@ -13,10 +13,10 @@ import ResetScroll from "./components/ResetScroll";
 function App() {
   return (
     <>
-      <Loader />
+      {/* <Loader /> */}
       <ResetScroll />
       <div className="relative grid grid-cols-12 bg-primary z-10">
-        <div className="col-span-12 px-2 md:px-0 md:col-span-8 md:col-start-3 z-10 bg-primary">
+        <div className="col-span-12 px-12 lg:pz-0 lg:col-span-8 lg:col-start-3 z-10 bg-primary">
           <Header />
           <section className="p-4">
             <Routes>
