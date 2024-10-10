@@ -17,7 +17,7 @@ export default {
           "100%": { transform: "scale(3)", opacity: "0" },
         },
         moveUp: {
-          "0%": { transform: "translateY(32px)", opacity: 1 },
+          "0%": { transform: "translateY(64px)", opacity: 1 },
           "50%": { transform: "translateY(0)", opacity: 1 },
           "100%": { transform: "translateY(-64px)", opacity: 1 },
         },
@@ -37,10 +37,10 @@ export default {
       animation: {
         "zap-line": "zap-line 0.6s forwards",
         ripple: "ripple 0.6s ease-out",
-        moveUp: "moveUp 3s ease-in-out forwards",
-        moveToZero: "moveToZero 1s ease-in-out forwards",
-        moveUpNegative: "moveUpNegative 1s ease-in-out forwards",
-        fadeIn: "fadeIn 0.5s ease-in-out forwards",
+        moveUp: "moveUp 2s ease-in-out forwards",
+        moveToZero: "moveToZero 2s ease-in-out forwards",
+        moveUpNegative: "moveUpNegative 2s ease-in-out forwards",
+        fadeIn: "fadeIn 1s ease-in forwards",
       },
     },
   },

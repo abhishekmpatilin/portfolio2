@@ -28,7 +28,7 @@ const Loader = () => {
               <div className="relative h-8 w-12 text-3xl text-right font-bold">
                 <p
                   className="animate-moveUpNegative"
-                  style={{ animationDelay: "1500ms" }}
+                  style={{ animationDelay: "0ms" }}
                 >
                   0
                 </p>
@@ -52,7 +52,7 @@ const Loader = () => {
                 </p>
                 <p
                   className="absolute right-0 top-full animate-moveToZero"
-                  style={{ animationDelay: "3000ms" }}
+                  style={{ animationDelay: "2000ms" }}
                 >
                   100
                 </p>
